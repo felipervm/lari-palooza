@@ -37,27 +37,31 @@ h1 {
 img {
   width: 100%;
   border-radius: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /* GRID */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-
-.grid img:nth-child(1) {
-  grid-column: span 2;
+  gap: 10px;
 }
 
 .grid img {
   border-radius: 12px;
 }
 
+/* BLOCO COM TEXTO AO LADO */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
 .text {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.5;
   opacity: 0.9;
 }
 
@@ -99,12 +103,11 @@ img {
     </p>
   </div>
 
-  <!-- GALERIA 1 -->
+  <!-- GALERIA 1 (2 fotos) -->
   <div class="section">
     <div class="grid">
       <img src="img_1.jpg">
       <img src="img_2.jpg">
-      <img src="img_4.jpg">
     </div>
   </div>
 
@@ -122,12 +125,16 @@ img {
     <p class="signature">– Lili</p>
   </div>
 
-  <!-- GALERIA 2 -->
+  <!-- GALERIA 2 (TATI + IMG 8) -->
   <div class="section">
-    <div class="grid">
-      <img src="img_6.jpg">
-      <img src="img_7.jpg">
+    <div class="row">
       <img src="img_8.jpg">
+      <div class="text">
+        Lari, que você tenha um ciclo incrível!<br><br>
+        O niver é seu mas o presente é nosso!<br><br>
+        Que você tenha um ano maravilhoso, seja feliz sempre! 💜
+        <div class="signature">– Tati</div>
+      </div>
     </div>
   </div>
 
@@ -158,11 +165,19 @@ img {
     <p class="signature">– Lari</p>
   </div>
 
-  <!-- GALERIA FINAL -->
+  <!-- GALERIA FINAL (LIPE + IMG 13 + MAIS 1) -->
   <div class="section">
-    <div class="grid">
-      <img src="img_10.jpg">
+    <div class="row">
       <img src="img_13.jpg">
+      <div class="text">
+        Lari, te desejo tudo de melhor nesse novo ciclo!<br><br>
+        Sou grato por ter te conhecido e ver o quão especial você é.<br><br>
+        Por mais memórias e momentos felizes ✨
+        <div class="signature">– Lipe</div>
+      </div>
+    </div>
+
+    <div style="margin-top:15px">
       <img src="img_5.jpg">
     </div>
   </div>
